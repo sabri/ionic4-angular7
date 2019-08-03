@@ -1,0 +1,116 @@
+<ion-header translucent>
+  <ion-toolbar color="favorite">
+    <ion-icon name="arrow-round-back" color="white" slot="start" size="large" [routerDirection]="'root'" routerLink="/home"></ion-icon>
+    <ion-title>Actualité</ion-title>
+    <ion-buttons slot="end">
+      <ion-icon class="ionicon" name="help-circle" color="white" [routerDirection]="'root'" routerLink="/aide"></ion-icon>
+    </ion-buttons>
+  </ion-toolbar>
+  <ion-toolbar mode="ios" class="toolb">
+    <ion-buttons slot="start" [routerDirection]="'root'" routerLink="/home">
+      <ion-icon class="ionicon" name="home" mode="ios"  ></ion-icon>
+    </ion-buttons>
+    <ion-buttons slot="start">
+      <ion-icon class="ionicon" name="paper" mode="ios" slot="start" color="dark" [routerDirection]="'root'" routerLink="/news"></ion-icon>
+    </ion-buttons>
+    <ion-buttons class="logo">
+      <ion-img class="avatar" src="assets/icon/favicon.png" mode="ios"></ion-img>
+    </ion-buttons>
+    <ion-buttons slot="end" (click)="openwebpage()">
+      <ion-icon class="ionicon"  name="stats" ></ion-icon> <ion-icon class="io" name="trending-up" color="green" ></ion-icon>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-icon class="ionicon" name="contact" mode="ios" [routerDirection]="'root'" routerLink="/login"></ion-icon>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle color="favorite">27/07/2019</ion-card-subtitle>
+      <ion-card-title>BNA - Cotation en Bourse suite à la réalisation de l’augmentation de capital</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <read-more [dataLength]="dataLength">
+      A partir du jeudi 1er août 2019, les 28 160 000 actions nouvelles souscrites seront admises et négociables en bourse sur la même ligne de cotation que les actions anciennes auxquelles elles seront assimilées.
+      </read-more>
+    </ion-card-content>
+
+  </ion-card>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle color="favorite">29/07/2019</ion-card-subtitle>
+      <ion-card-title>LANDOR - Communication financière</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <read-more [dataLength]="dataLength">
+        A partir du jeudi 1er août 2019, les 28 160 000 actions nouvelles souscrites seront admises et négociables en bourse sur la même ligne de cotation que les actions anciennes auxquelles elles seront assimilées.
+    </read-more>
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle color="favorite">27/07/2019</ion-card-subtitle>
+      <ion-card-title>BNA - Cotation en Bourse suite à la réalisation de l’augmentation de capital</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <read-more [dataLength]="dataLength">
+        A partir du jeudi 1er août 2019, les 28 160 000 actions nouvelles souscrites seront admises et négociables en bourse sur la même ligne de cotation que les actions anciennes auxquelles elles seront assimilées.
+      </read-more>    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle>27/07/2019</ion-card-subtitle>
+      <ion-card-title>BNA - Cotation en Bourse suite à la réalisation de l’augmentation de capital</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <read-more [dataLength]="dataLength">
+        A partir du jeudi 1er août 2019, les 28 160 000 actions nouvelles souscrites seront admises et négociables en bourse sur la même ligne de cotation que les actions anciennes auxquelles elles seront assimilées.
+      </read-more>    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle color="favorite">27/07/2019</ion-card-subtitle>
+      <ion-card-title>BNA - Cotation en Bourse suite à la réalisation de l’augmentation de capital</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <read-more [dataLength]="dataLength">
+        A partir du jeudi 1er août 2019, les 28 160 000 actions nouvelles souscrites seront admises et négociables en bourse sur la même ligne de cotation que les actions anciennes auxquelles elles seront assimilées.
+      </read-more>    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle color="favorite">27/07/2019</ion-card-subtitle>
+      <ion-card-title> BNA - Cotation en Bourse suite à la réalisation de l’augmentation de capital</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <read-more [dataLength]="dataLength">
+        A partir du jeudi 1er août 2019, les 28 160 000 actions nouvelles souscrites seront admises et négociables en bourse sur la même ligne de cotation que les actions anciennes auxquelles elles seront assimilées.
+      </read-more>    </ion-card-content>
+  </ion-card>
+
+
+</ion-content>
+<ion-footer translucent>
+  <ion-toolbar>
+  <div class="ion-padding">
+    <marquee>
+        <span style="font-weight: bold; padding: 5px;">
+            ADWIA  2.0% <ion-icon name="arrow-round-up" color="green"></ion-icon>
+        </span>
+      <span style="font-weight: bold; padding: 5px;">
+            AETECH -2.0% <ion-icon name="arrow-round-down" color="red"></ion-icon>
+        </span>
+      <span style="font-weight: bold; padding: 5px;">
+            BIAT -4.05% <ion-icon name="arrow-round-down" color="red"></ion-icon>
+        </span>
+
+      <span style="font-weight: bold; padding: 5px;">
+            ASSAD 0.00% <ion-icon name="remove" color="dark"></ion-icon>
+        </span>
+    </marquee>
+  </div>
+  </ion-toolbar>
+</ion-footer>

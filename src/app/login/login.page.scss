@@ -1,0 +1,82 @@
+app-login {
+
+}
+
+$white-color: #fff;
+$height100: 100%;
+
+ion-grid {
+  width:80%;
+  height: $height100;
+  background: #ffffff;
+}
+
+ion-row {
+  height: $height100;
+}
+
+ion-col {
+  border: 1px solid #ff7f00;
+  background: $white-color;
+}
+
+ion-button {
+  font-weight: 300;
+}
+
+@media (min-width: 240px) and (max-width: 768px) {
+  ion-grid {
+    background: $white-color;
+  }
+  ion-col {
+    border: none;
+  }
+}
+.imge{
+  border: 2px solid #1e2023;
+  border-radius: 100%;
+  z-index: 99;
+  justify-content: center;
+  justify-items: center;
+  position: center;
+  width:90px;
+  height: 90px;
+  margin: 20px auto auto auto;
+}
+.login{
+  justify-content: center;
+  justify-items: center;
+  position: center;
+  width: 80%;
+  height: 200px;
+  margin: 30px auto auto auto;
+}
+.bt1{
+  height: 30px;
+  width: 280px;
+  border-radius: unset;
+ justify-content: center;
+  justify-items: center;
+  box-shadow: unset;
+  border: 1px solid darkorange;
+}
+.link1{
+  justify-items: right;
+  justify-content: right;
+  text-align: right;
+  margin-left: 50%;
+}
+a:active {
+  background-color: blue;
+}
+.toolb{
+  border-bottom: #6B6C73;
+  mso-border-shadow: yes;
+  box-shadow: 4px 3px rgba(0, 0, 0, 0.07);
+}
+.ionicon {
+  color: #6B6C73 !important;
+  font-size: 32px;
+  margin-left: 20px !important;
+  margin-right: 20px !important;
+}

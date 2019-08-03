@@ -1,0 +1,48 @@
+<ion-header translucent>
+  <ion-toolbar color="favorite">
+    <ion-icon name="arrow-round-back" color="white" slot="start" size="large" [routerDirection]="'root'" routerLink="/home"></ion-icon>
+    <ion-title>Tunidex</ion-title>
+    <ion-buttons slot="end">
+      <ion-icon class="ionicon" name="help-circle" color="white" [routerDirection]="'root'" routerLink="/aide"></ion-icon>
+    </ion-buttons>
+  </ion-toolbar>
+  <ion-toolbar mode="ios" class="toolb">
+    <ion-buttons slot="start" [routerDirection]="'root'" routerLink="/home">
+      <ion-icon class="ionicon" name="home" mode="ios" ></ion-icon>
+    </ion-buttons>
+    <ion-buttons slot="start">
+      <ion-icon class="ionicon" name="paper" mode="ios" slot="start" size="large"  [routerDirection]="'root'" routerLink="/news"></ion-icon>
+    </ion-buttons>
+    <ion-buttons class="logo">
+      <ion-img class="avatar" src="assets/icon/favicon.png" mode="ios"></ion-img>
+    </ion-buttons>
+    <ion-buttons slot="end" [routerDirection]="'root'" routerLink="/tunidex">
+      <ion-icon class="ionicon" name="stats" color="dark"></ion-icon><ion-icon class="io" color="green" name="trending-up"></ion-icon>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-icon class="ionicon" name="contact" mode="ios" [routerDirection]="'root'" routerLink="/login"></ion-icon>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-segment class="ionsegment" color="favorite" mode="ios">
+    <ion-segment-button checked mode="ios">
+      <ion-label>Temps réel</ion-label>
+    </ion-segment-button>
+    <ion-segment-button mode="ios">
+      <ion-label>Historique</ion-label>
+    </ion-segment-button>
+  </ion-segment>
+  <div>
+
+
+    <ion-card>
+      <ion-card-header>
+        Tunindex
+      </ion-card-header>
+      <ion-card-content>
+        <canvas #lineCanvas></canvas>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>

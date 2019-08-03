@@ -1,0 +1,165 @@
+<ion-header translucent>
+    <app-head></app-head>
+    <ion-toolbar mode="ios" class="toolb" >
+        <ion-buttons slot="start" [routerDirection]="'root'" routerLink="/home">
+            <ion-icon class="ionicon" name="home" mode="ios" color="dark" ></ion-icon>
+        </ion-buttons>
+        <ion-buttons slot="start">
+            <ion-icon class="ionicon" name="paper" mode="ios" slot="start" size="large" [routerDirection]="'root'" routerLink="/news"></ion-icon>
+        </ion-buttons>
+        <ion-buttons class="logo">
+            <ion-img class="avatar" src="assets/icon/favicon.png" mode="ios"></ion-img>
+        </ion-buttons>
+
+        <ion-buttons slot="end" (click)="openwebpage()">
+            <ion-icon class="ionicon"  name="stats" ></ion-icon> <ion-icon class="io" name="trending-up" color="green" ></ion-icon>
+        </ion-buttons>
+
+        <ion-buttons slot="end">
+            <ion-icon class="ionicon" name="contact" mode="ios" [routerDirection]="'root'" routerLink="/login"></ion-icon>
+        </ion-buttons>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen>
+    <ion-segment class="ionsegment" color="favorite" mode="ios">
+        <ion-segment-button checked mode="ios">
+            <ion-label>Today</ion-label>
+        </ion-segment-button>
+        <ion-segment-button mode="ios">
+            <ion-label>Yesterday</ion-label>
+        </ion-segment-button>
+    </ion-segment>
+    <ion-segment class="ionsegment" color="favorite" mode="ios">
+        <ion-segment-button mode="ios">
+            <ion-label>Hausses</ion-label>
+        </ion-segment-button>
+        <ion-segment-button mode="ios">
+            <ion-label>baisses</ion-label>
+        </ion-segment-button>
+        <ion-segment-button mode="ios">
+            <ion-label>actives</ion-label>
+        </ion-segment-button>
+    </ion-segment>
+    <ion-list>
+        <ion-segment class="ionlist" color="gray" >
+            <ion-segment-button mode="ios">
+                <ion-label>Valeur</ion-label>
+            </ion-segment-button>
+            <ion-segment-button mode="ios">
+                <ion-label>Dernier</ion-label>
+            </ion-segment-button>
+            <ion-segment-button mode="ios">
+                <ion-label>Var%</ion-label>
+            </ion-segment-button>
+            <ion-segment-button mode="ios">
+                <ion-label>Titre</ion-label>
+            </ion-segment-button>
+        </ion-segment>
+        <ion-item [routerDirection]="'root'" routerLink="/companydetail">
+            <ion-col>
+
+                <ion-chip color="white">
+                    <ion-avatar>
+                        <img src="assets/adwya.jpg">
+                    </ion-avatar>
+                    <ion-label color="dark"  style="font-weight: bold">ADWIA</ion-label>
+                </ion-chip>
+
+            </ion-col>
+            <ion-col class="label">
+                <ion-label class="label" color="dark"  style="font-weight: bold">12.12</ion-label>
+            </ion-col>
+            <ion-col class="label">
+                <ion-label color="dark" class="label"  style="font-weight: bold">+2.01% <ion-icon class="ionchip" color="green" name="trending-up"></ion-icon></ion-label>
+            </ion-col >
+            <ion-col class="label">
+                <ion-label class="label" color="dark"  style="font-weight: bold">674</ion-label>
+            </ion-col>
+        </ion-item>
+        <ion-item [routerDirection]="'root'" routerLink="/companydetail">
+            <ion-col>
+                <span >
+                <ion-chip   color="white">
+                    <ion-avatar>
+                        <img src="assets/index.jpg">
+                    </ion-avatar>
+                    <ion-label color="dark" style="font-weight: bold">BIAT</ion-label>
+                </ion-chip>
+                    </span>
+            </ion-col>
+            <ion-col class="label">
+                <ion-label  color="dark" style="font-weight: bold">15.12</ion-label>
+            </ion-col>
+            <ion-col class="label">
+                <ion-label color="dark" class="label" style="font-weight: bold">-4.33% <ion-icon class="ionchip" color="red" name="trending-down"></ion-icon></ion-label>
+            </ion-col>
+            <ion-col class="label">
+                <ion-label class="label" color="dark" style="font-weight: bold">67</ion-label>
+            </ion-col>
+        </ion-item>
+        <ion-item [routerDirection]="'root'" routerLink="/companydetail">
+            <ion-col >
+                <span >
+                <ion-chip   color="white">
+                    <ion-avatar>
+                        <img src="assets/aetec.gif">
+                    </ion-avatar>
+                    <ion-label color="dark" style="font-weight: bold">AETECH</ion-label>
+                </ion-chip>
+                    </span>
+            </ion-col>
+            <ion-col class="label">
+                <ion-label class="label" color="dark" style="font-weight: bold">2.12</ion-label>
+            </ion-col>
+            <ion-col class="label">
+                <ion-label color="dark" class="label" style="font-weight: bold">-1.01% <ion-icon class="ionchip" color="red" name="trending-down"></ion-icon></ion-label>
+            </ion-col>
+            <ion-col>
+                <ion-label class="label" color="dark" style="font-weight: bold">74</ion-label>
+            </ion-col>
+        </ion-item>
+        <ion-item [routerDirection]="'root'" routerLink="/companydetail">
+            <ion-col >
+                <span >
+                <ion-chip  color="white">
+                    <ion-avatar>
+                        <img src="assets/assad.jpg">
+                    </ion-avatar>
+                    <ion-label color="dark" style="font-weight: bold">ASSAD</ion-label>
+                </ion-chip>
+                    </span>
+            </ion-col>
+            <ion-col class="label">
+                <ion-label class="label" color="dark" style="font-weight: bold">8.12</ion-label>
+            </ion-col>
+            <ion-col class="label">
+                <ion-label color="dark" class="label" style="font-weight: bold">0.00% <ion-icon class="ionchip" color="dark" name="remove"></ion-icon></ion-label>
+            </ion-col>
+            <ion-col class="label">
+                <ion-label class="label" color="dark" style="font-weight: bold">6</ion-label>
+            </ion-col>
+        </ion-item>
+    </ion-list>
+</ion-content>
+<ion-footer translucent>
+    <ion-toolbar>
+        <div class="ion-padding">
+            <marquee>
+        <span style="font-weight: bold; padding: 5px;">
+            ADWIA  2.0% <ion-icon name="arrow-round-up" color="green"></ion-icon>
+        </span>
+                <span style="font-weight: bold; padding: 5px;">
+            AETECH -2.0% <ion-icon name="arrow-round-down" color="red"></ion-icon>
+        </span>
+                <span style="font-weight: bold; padding: 5px;">
+            BIAT -4.05% <ion-icon name="arrow-round-down" color="red"></ion-icon>
+        </span>
+
+                <span style="font-weight: bold; padding: 5px;">
+            ASSAD 0.00% <ion-icon name="remove" color="dark"></ion-icon>
+        </span>
+            </marquee>
+        </div>
+    </ion-toolbar>
+</ion-footer>

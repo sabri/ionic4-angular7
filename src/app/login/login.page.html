@@ -1,0 +1,55 @@
+<ion-header translucent>
+    <ion-toolbar color="favorite" >
+        <ion-icon name="arrow-round-back" color="white" slot="start" size="large" [routerDirection]="'root'"
+                  routerLink="/home"></ion-icon>
+        <ion-title>LogIn</ion-title>
+        <ion-buttons slot="end">
+            <ion-icon class="ionicon" name="help-circle" color="white" [routerDirection]="'root'" routerLink="/aide"></ion-icon>
+        </ion-buttons>
+    </ion-toolbar>
+  <ion-toolbar>
+<ion-segment color="favorite">
+  <ion-segment-button checked>
+  Connexion
+  </ion-segment-button>
+  <ion-segment-button [routerDirection]="'root'" routerLink="/payement">
+Inscription
+  </ion-segment-button>
+</ion-segment>
+  </ion-toolbar>
+</ion-header>
+<ion-content fullscreen>
+  <ion-avatar class="imge">
+    <img src="assets/icon/favicon.png">
+  </ion-avatar>
+
+<div class = "login">
+                <div text-center >
+                  <h4>Login Form</h4>
+                </div>
+                <div padding>
+                    <ion-item>
+                        <ion-input type="text" placeholder="Username"></ion-input>
+                    </ion-item>
+
+                    <ion-item>
+                        <ion-input type="password" placeholder="Password"></ion-input>
+                    </ion-item>
+                </div>
+
+                <div padding>
+                    <ion-button  href="/touchid"  color="favorite" expand="block" >Login</ion-button>
+                </div>
+    <a href="#" color="primary"  class="link1">Mot de passe oublié</a>
+
+    <div padding>
+                <ion-button  href="/touchid" expand="block" color="darkblue"><ion-icon name="logo-facebook" size="large" slot="start" color="white"></ion-icon>Facebook</ion-button>
+              </div>
+    <div padding>
+        <ion-button  href="/touchid" expand="block" color="red"><ion-icon name="logo-google" size="large" slot="start" color="white"></ion-icon>Google</ion-button>
+
+    </div>
+
+</div>
+</ion-content>
+

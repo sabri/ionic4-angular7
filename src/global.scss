@@ -1,0 +1,79 @@
+// http://ionicframework.com/docs/theming/
+@import '~@ionic/angular/css/core.css';
+@import '~@ionic/angular/css/normalize.css';
+@import '~@ionic/angular/css/structure.css';
+@import '~@ionic/angular/css/typography.css';
+@import '~@ionic/angular/css/display.css';
+@import '~@ionic/angular/css/padding.css';
+@import '~@ionic/angular/css/float-elements.css';
+@import '~@ionic/angular/css/text-alignment.css';
+@import '~@ionic/angular/css/text-transformation.css';
+@import '~@ionic/angular/css/flex-utils.css';
+
+
+.searchbar-input {
+  background: #ff7f00 !important;
+  font-size: 1em !important;
+  width: 300px;
+  box-shadow: none !important;
+  border-radius: unset !important;
+  color: #fff !important;
+  border-bottom: 2px solid #ffffff !important;
+  margin-bottom: 20px !important;
+}
+:root {
+  --ion-color-favorite: #ff7f00;
+  --ion-color-favorite-rgb: 255,165,0;
+  --ion-color-favorite-contrast: #ffffff;
+  --ion-color-favorite-contrast-rgb: 255,255,255;
+  --ion-color-favorite-shade: #ff7f00;
+  --ion-color-favorite-tint: #ff7f00;
+}
+:root {
+  --ion-color-white: #ffffff;
+  --ion-color-white-rgb: 255,255,255;
+  --ion-color-white-contrast: #ffffff;
+  --ion-color-white-contrast-rgb: 255,255,255;
+  --ion-color-white-shade: #ffffff;
+  --ion-color-white-tint: #fff;
+  –-input-md-input-search-icon-color: #ffffff;
+  --ion-color-green: #32CD32;
+  --ion-color-gray: #6B6C73;
+  --ion-color-red: #ff0000;
+  --ion-color-darkorange: #eb7a00;
+  --ion-color-darkblue: #3b5998;
+}
+.ion-color-favorite {
+  --ion-color-base: var(--ion-color-favorite);
+  --ion-color-base-rgb: var(--ion-color-favorite-rgb);
+  --ion-color-contrast: var(--ion-color-favorite-contrast);
+  --ion-color-contrast-rgb: var(--ion-color-favorite-contrast-rgb);
+  --ion-color-shade: var(--ion-color-favorite-shade);
+  --ion-color-tint: var(--ion-color-favorite-tint);
+}
+.ion-color-white {
+  --ion-color-base: var(--ion-color-white);
+  --ion-color-base-rgb: var(--ion-color-white-rgb);
+  --ion-color-contrast: var(--ion-color-white-contrast);
+  --ion-color-contrast-rgb: var(--ion-color-white-contrast-rgb);
+  --ion-color-shade: var(--ion-color-white-shade);
+  --ion-color-tint: var(--ion-color-white-tint);
+}
+.ion-color-green {
+  --ion-color-base: var(--ion-color-green);
+}
+.ion-color-gray {
+  --ion-color-base: var(--ion-color-gray);
+}
+.ion-color-red{
+  --ion-color-base: var(--ion-color-red);
+
+}
+.ion-color-darkorange{
+  --ion-color-base: var(--ion-color-darkorange);
+
+}
+.ion-color-darkblue{
+  --ion-color-base: var(--ion-color-darkblue);
+
+}
